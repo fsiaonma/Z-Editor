@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+            body {
+                background-color: #FFFFF4;
+            }
+            h1,h2 {
+                color: #F4224D;
+            }
+            p {
+                color: #6E6E6E;
+                font-weight: bold;
+                font-size: 16px;
+            }
+            .api-decorate {
+                margin : 45px 0 45px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>帮助文档</h1>
+        </center>
+        <h2>api接口:</h2>
+        <ul>
+            <li>
+                <div class="api-decorate">
+                    <h3>全局对象: OLEditor</h3>
+                <div>
+            </li>
+            <li>
+                <div class="api-decorate">
+                    <h3>init (初始化OLEditor方法)</h3>
+                    <p>用例: OLEditor.init();</p>
+                    <p>参数: 无</p>
+                </div>
+            </li>
+            <li>
+                <div class="api-decorate">
+                    <h3>getValue (获取编辑器文本内容)</h3>
+                    <p>用例: OLEditor.getValue();</p>
+                    <p>参数: 无</p>
+                <div>
+            </li>
+            <li>
+                <div class="api-decorate">
+                    <h3>setValue (获取编辑器文本内容)</h3>
+                    <p>用例: OLEditor.setValue(data, type);</p>
+                    <p>参数: </p>
+                    <p>data: <String> 要填入编辑器的内容</p>
+                    <p>type: <String> 要填入编辑器内容的类型</p>
+                    <p>(可选参数3个: 'text/html', 'css', 'javascript')</p>
+                </div>
+            </li>
+        </ul>
+        <h2>编辑器功能:</h2>
+        <ul>
+            <li><p>Ctrl + F 可以进行搜索</p></li>
+            <li><p>F11 可切换到全屏, Esc/F11 退出</p></li>
+            <li><p>根据html代码动态生成效果图</p></li>
+            <li><p>对应不同格式文件高亮</p></li>
+            <li><p>双击某一词语能显示文本中其他相同词语</p></li>
+            <li><p>显示选中行</p></li>
+        </ul>
+    </body>
+</html>

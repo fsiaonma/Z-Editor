@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Editor</title>
+    <link rel="stylesheet" href="./css/codemirror.css"/>
+    <link rel="stylesheet" href="./css/docs.css"/>
+    <link rel="stylesheet" href="./css/dialog.css"/>
+    <link rel="stylesheet" href="./css/index.css"/>
+    <link rel="stylesheet" href="./css/theme/solarized.css"/>
+  </head>
+  <body>
+    <center>
+        <h1 class="title">Zeus Editor</h1>
+    </center>
+    <div id="editor" class="editor">
+        <input id="textValue" type="text" style="display: none;"></input>
+        <textarea id="code" name="code"></textarea>
+        <iframe id="preview" class="preview"></iframe>
+        <div class="api-link">
+            <font class="font">For Keyboard Shortcuts</font>
+            <a href="javascript:;" onclick="showShorcuts()"><font class="font">Click Here</font></a>
+        </div>
+    </div>
+    <div id="msgBoxArea" class="messageArea">
+        <div id="choiceBox" class="msgBox">
+            <div id='msg' class="contentArea">
+                <center>
+                    <font class="docTitle">Shotcuts Docs<font>
+                </center>
+                <div class="content">
+                    <div class="key"> F11: </div> <div class="value"> Full screen </div> <br />
+                    <div class="key"> F10: </div> <div class="value"> JSHint </div> <br />
+                    <div class="key"> Ctrl + F: </div> <div class="value"> To Search </div> <br />
+                </div>
+            </div>
+            <a href="#" class="ui-back" onclick="backToEditor()">Back</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="./lib/codemirror.js"></script>
+    <script type="text/javascript" src="./lib/javascript.js"></script>
+    <script type="text/javascript" src="./lib/xml.js"></script>
+    <script type="text/javascript" src="./lib/css.js"></script>
+    <script type="text/javascript" src="./lib/htmlmixed.js"></script>
+    <script src="./lib/match-highlighter.js"></script>
+    <script src="./lib/searchcursor.js"></script>
+    <script src="./lib/search.js"></script>
+    <script type="text/javascript" src="./lib/dialog.js"></script>
+    <script type="text/javascript" src="./lib/jshint.js"></script>
+    <script type="text/javascript" src="./js/decorate.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript">
+        var showShorcuts = function () {
+            OLEditor.showShorcuts();
+        };
+        var backToEditor = function () {
+            OLEditor.backToEditor();
+        }
+        window.onload = function () {
+            OLEditor.init();
+        }
+    </script>
+  </body>
+</html>
