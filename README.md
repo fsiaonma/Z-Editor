@@ -1,6 +1,4 @@
-![alt text](./editor.png "Title")
-
-N-Builder
+Z-Editor
 ============
 
 ## 什么是 Z-Editor ?
