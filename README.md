@@ -1,1 +1,1 @@
-![alt text](./editor.png. "Title")
+![alt text](./editor.png "Title")
